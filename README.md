@@ -1,10 +1,10 @@
-Introduction 
+<strong>Introduction</strong>
 
 friendFinder is a compatibility-based "FriendFinder" application. This full-stack site takes in results from user surveys, then compares their answers with those from other users. The app then displays the name and picture of the user with the best overall match.
 
 I used Express to handle routing and deployed the app to Heroku so other users can use it.
 
-Demo 
+<strong>Demo</strong>
 
 1. Navigate to https://friend----finder.herokuapp.com/home. Once the Home screen loads, the user will be prompted to go to the survey.
 
