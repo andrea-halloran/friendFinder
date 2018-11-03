@@ -27,4 +27,5 @@ Note: At the footer, there are links to see the API table, git hub repo, and a l
 <strong>Challenges</strong>
 
 I had issues with posting to the API table, and with the matching algorithm. I psudo-coded this portion to the best of my abilities. 
-    ![alt text](/images/five.png)
+    
+    ![alt text](/images/5.png)
