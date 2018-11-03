@@ -36,20 +36,18 @@
 
                                         <div class="form-group">
                                             <label for="formGroupExampleInput"><strong>Name</strong></label>
-                                            <input type="text" class="form-control" id="formGroupExampleInput"
-                                                placeholder="Required">
+                                            <input type="text" class="form-control" id="name" placeholder="Required">
                                         </div>
                                         <div class="form-group">
                                             <label for="formGroupExampleInput2"><strong>Link to photo image</strong></label>
-                                            <input type="text" class="form-control" id="formGroupExampleInput2"
-                                                placeholder="Required">
+                                            <input type="text" class="form-control" id="photo" placeholder="Required">
                                         </div>
 
 
                                         <div class="form-group">
                                             <label for="exampleFormControlSelect1">You believe that Taco Bell is the
                                                 best fast food resturant.</label>
-                                            <select class="form-control" id="exampleFormControlSelect1">
+                                            <select class="form-control" id="Q1">
                                                 <option value="1 (Strongly Disagree)">1 (Strongly Disagree)</option>
                                                 <option value="2">2</option>
                                                 <option value="3">3</option>
@@ -61,7 +59,7 @@
                                         <div class="form-group">
                                             <label for="exampleFormControlSelect1">You were sad when Taco Bell retired
                                                 the Beefy Crunch Burrito.</label>
-                                            <select class="form-control" id="exampleFormControlSelect1">
+                                            <select class="form-control" id="Q2">
                                                 <option value="1 (Strongly Disagree)">1 (Strongly Disagree)</option>
                                                 <option value="2">2</option>
                                                 <option value="3">3</option>
@@ -73,7 +71,7 @@
                                         <div class="form-group">
                                             <label for="exampleFormControlSelect1">You were excited when Taco Bell
                                                 brought back the Beefy Crunch Burrito.</label>
-                                            <select class="form-control" id="exampleFormControlSelect1">
+                                            <select class="form-control" id="Q3">
                                                 <option value="1 (Strongly Disagree)">1 (Strongly Disagree)</option>
                                                 <option value="2">2</option>
                                                 <option value="3">3</option>
@@ -85,7 +83,7 @@
                                         <div class="form-group">
                                             <label for="exampleFormControlSelect1">The Taco Bell Cantina is a fine
                                                 dining experience.</label>
-                                            <select class="form-control" id="exampleFormControlSelect1">
+                                            <select class="form-control" id="Q4">
                                                 <option value="1 (Strongly Disagree)">1 (Strongly Disagree)</option>
                                                 <option value="2">2</option>
                                                 <option value="3">3</option>
@@ -97,7 +95,7 @@
                                         <div class="form-group">
                                             <label for="exampleFormControlSelect1">Your dream is to get married at the
                                                 Taco Bell in Las Vegas.</label>
-                                            <select class="form-control" id="exampleFormControlSelect1">
+                                            <select class="form-control" id="Q5">
                                                 <option value="1 (Strongly Disagree)">1 (Strongly Disagree)</option>
                                                 <option value="2">2</option>
                                                 <option value="3">3</option>
@@ -109,7 +107,7 @@
                                         <div class="form-group">
                                             <label for="exampleFormControlSelect1">If you won the lottery, you would
                                                 spend the money flying out to the Taco Bell test kitchen in Irvine, CA.</label>
-                                            <select class="form-control" id="exampleFormControlSelect1">
+                                            <select class="form-control" id="Q6">
                                                 <option value="1 (Strongly Disagree)">1 (Strongly Disagree)</option>
                                                 <option value="2">2</option>
                                                 <option value="3">3</option>
@@ -121,7 +119,7 @@
                                         <div class="form-group">
                                             <label for="exampleFormControlSelect1">Nothing is better than going through
                                                 the Taco Bell drive thru after a rough day.</label>
-                                            <select class="form-control" id="exampleFormControlSelect1">
+                                            <select class="form-control" id="Q7">
                                                 <option value="1 (Strongly Disagree)">1 (Strongly Disagree)</option>
                                                 <option value="2">2</option>
                                                 <option value="3">3</option>
@@ -133,7 +131,7 @@
                                         <div class="form-group">
                                             <label for="exampleFormControlSelect1">Taco Bell is the healthiest fast
                                                 food resturant.</label>
-                                            <select class="form-control" id="exampleFormControlSelect1">
+                                            <select class="form-control" id="Q8">
                                                 <option value="1 (Strongly Disagree)">1 (Strongly Disagree)</option>
                                                 <option value="2">2</option>
                                                 <option value="3">3</option>
@@ -145,7 +143,7 @@
                                         <div class="form-group">
                                             <label for="exampleFormControlSelect1">Your idea of the perfect vaction is
                                                 road tripping to all of the Taco Bells in America.</label>
-                                            <select class="form-control" id="exampleFormControlSelect1">
+                                            <select class="form-control" id="Q9">
                                                 <option value="1 (Strongly Disagree)">1 (Strongly Disagree)</option>
                                                 <option value="2">2</option>
                                                 <option value="3">3</option>
@@ -157,7 +155,7 @@
                                         <div class="form-group">
                                             <label for="exampleFormControlSelect1">You cried when you had your first
                                                 Nacho Fry.</label>
-                                            <select class="form-control" id="exampleFormControlSelect1">
+                                            <select class="form-control" id="Q10">
                                                 <option value="1 (Strongly Disagree)">1 (Strongly Disagree)</option>
                                                 <option value="2">2</option>
                                                 <option value="3">3</option>
@@ -180,6 +178,39 @@
             </div>
         </div>
     </div>
+
+
+
+
+
+    <!-- <script>
+    
+    $("#add-btn").on("click", function (event) {
+            // convert the survey into an array of numbers
+            var newSurvey = {
+                name: `${name}`,
+                photo: `${photo}`,
+                scores: [
+                    `${Q1}`,
+                    `${Q2}`,
+                    `${Q3}`,
+                    `${Q4}`,
+                    `${Q5}`,
+                    `${Q6}`,
+                    `${Q7}`,
+                    `${Q8}`,
+                    `${Q9}`,
+                    `${Q10}`,
+                ]
+            };
+
+            console.log(newSurvey);
+
+            $post('/api/friends', newSurvey) function(data){
+                //match data
+            }
+    
+    </script> -->
 
     <br>
 

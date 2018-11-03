@@ -10,7 +10,7 @@ I used Express to handle routing and deployed the app to Heroku so other users c
 
     ![alt text](/images/one.png)
 
-2. The survey will load, and the user will be prompted to enter their name and a photo. They will then answer the 10 survey question. Once submitted, the app will display their best match. 
+2. The survey will load, and the user will be prompted to enter their name and a photo. They will then answer the 10 survey questions. Once submitted, the app will display their best match. 
 
     ![alt text](/images/two.png)
 
