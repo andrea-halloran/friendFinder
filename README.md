@@ -14,6 +14,8 @@ I used Express to handle routing and deployed the app to Heroku so other users c
 
     ![alt text](/images/two.png)
 
+    <br>
+
     ![alt text](/images/three.png)
 
 Note: At the footer, there are links to see the API table, git hub repo, and a link that will take you back to the Home page.
